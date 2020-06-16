@@ -9,7 +9,7 @@ end
 
 def consolidate_cart(cart)
   new_cart=[]
-  cart.each do |cart_items|
+  cart.map do |cart_items|
         if find_item_by_name_in_collection(cart_items[:item], new_cart)
           i=0
           while(i<new_cart.length) do
