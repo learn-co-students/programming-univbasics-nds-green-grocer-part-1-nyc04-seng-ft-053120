@@ -10,7 +10,6 @@ def consolidate_cart(cart)
       receipt_array << elem
       receipt_array[receipt_array.length-1][:count] = 1
     else 
-      index = 0 
       receipt_array.find { |element| element[:count] += 1 }
     end
   end 
