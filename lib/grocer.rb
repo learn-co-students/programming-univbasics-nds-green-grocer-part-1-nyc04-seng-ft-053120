@@ -2,7 +2,7 @@
 def find_item_by_name_in_collection(name, collection)
   collection.find {|elem| elem[:item] == name}
 end
-#returns a new array that contains a count of each item 
+#returns a new array of hashes that contain a count of each item 
 def consolidate_cart(cart)
   receipt_array = []
   cart.each do | elem |
